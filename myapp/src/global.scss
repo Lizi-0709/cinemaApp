@@ -1,0 +1,9 @@
+@import "../src/Pages/Home/home.scss";
+@import "../src/Pages/Detail/detail.scss";
+@import "../src/Pages/Profile/profile.scss";
+
+body{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    background: $bgColor;  
+} 
