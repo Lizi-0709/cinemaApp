@@ -1,1 +1,224 @@
 @import "../../variables.scss";
+
+.Home {
+    height: 1000vh;
+
+    .HomePageBgDiv {
+        opacity: .7;
+        width: 100%;
+        height: 97vh;
+        background-image: url(https://wallpapercave.com/wp/wp9424755.jpg);
+        background-size: cover;
+        background-position: top;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        .black-bg-theme {
+            background: rgba(0, 0, 0, 0.845);
+            height: 100%;
+
+            nav {
+                height: 10%;
+                background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+
+                .container-md {
+
+                    .Logo {}
+
+                    a {
+                        &:hover {
+                            opacity: .7;
+                            transition: all .5s;
+                        }
+                    }
+
+                    .active {
+                        border-bottom: 3px solid orange;
+                        transition: all .5s;
+
+                    }
+
+                    .account-div {
+                        width: 8%;
+
+
+
+                        a {
+                            img {
+
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 100%;
+                                border: 5px solid $dark-5 ;
+                                background-color: $dark-5;
+                                object-fit: cover;
+
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .home-content {
+                height: 90%;
+
+                .container-md {
+                    .row {
+                        .col-left {
+                            .content-left {
+                                .child-2 {
+                                    h1 {
+                                        font-size: 50px;
+                                        letter-spacing: 6px;
+                                    }
+                                }
+
+                                .child-3 {
+                                    h6 {
+                                        letter-spacing: 6px;
+
+                                    }
+                                }
+
+                                .child-4 {
+                                    // background: linear-gradient(to bottom, rgb(99, 99, 99), rgba(0, 0, 0, 0.504) 150%);
+                                }
+
+                                .child-5 {
+                                    button {
+                                        border: none;
+                                        transition: all .5s;
+                                        background: $dark-5;
+                                        box-shadow: $dark 0px 2px;
+
+                                        &:hover {
+                                            background: $buttonBg;
+                                            box-shadow: $dark-5 0px 2px;
+                                            color: $dark !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // .col-right {
+                    //     .content-right {
+                    //         button {
+                    //             border: none;
+                    //             transition: all .5s;
+                    //             background: $buttonBg;
+                    //             box-shadow: $dark 0px 2px;
+
+                    //             &:hover {
+                    //                 background: $dark-5;
+                    //                 box-shadow: $dark-5 0px 2px;
+                    //                 color: $title !important;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+
+
+    .sliderBg {
+        .container-md {
+            .slider-title-div {
+                h4 {
+                    color: $title;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .sliderContent {
+                
+            }
+        }
+
+    }
+
+
+    .slider-2-bg {
+        .slider-content-2-parent {
+            .container-md {
+
+                h6 {}
+
+                .slider-content-2 {
+
+
+                    .slider-2-card {
+                        position: relative;
+                        width: 12%;
+                        background: $dark-5 !important;
+                        flex: 0 0 auto;
+
+                        .rating-div {
+                            left: 10px;
+                            top: 10px;
+                            background: rgba(0, 0, 0, 0.808) !important;
+                            z-index: 99;
+                            width: 40%;
+
+                            svg {
+                                width: 25%;
+                            }
+
+                            .rating-point {
+
+                                color: $title !important;
+
+                            }
+
+                        }
+
+
+                        svg {
+                            color: $title !important;
+                            z-index: 99;
+                            transition: all .3s !important;
+
+                        }
+
+                        .bookmarks {
+                            background: rgba(0, 0, 0, 0.808) !important;
+                            position: absolute;
+                            top: 5px;
+                            right: 4px;
+                            width: 25% !important;
+
+                            &:hover {
+                                top: 8px;
+                                right: 8px;
+                                transform: scale(1.15);
+                            }
+
+                        }
+
+
+
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border: 3px solid $title;
+                            object-fit: cover;
+                            transition: all .5s;
+
+                            &:hover {
+                                opacity: .75 !important;
+                                border: 3px solid $dark-5;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
