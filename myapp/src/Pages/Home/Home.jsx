@@ -266,14 +266,29 @@ function Home() {
         <div className="slider-content-2-parent p-1">
           <Container fluid='md'>
             <h6 className='text-white fw-bold p-1 pb-0 mt-1 text-uppercase'>test</h6>
-            <div className="slider-content-2 d-flex overflow-x-auto gap-2">
+            <div className="slider-content-2 d-flex overflow-x-auto overflow-y-hidden gap-2">
 
 
               {sliderCards2.map((item) => (
 
-                <div key={item.id} className="slider-2-card d-flex justify-content-center align-items-center mb-3 position-relative">
+                <div key={item.id} className="slider-2-card d-flex mb-3 position-relative">
+                  {/* stars */}
+                  <div className="rating-div gap-2 position-absolute d-flex justify-content-center rounded-3 align-items-center p-1">
+                    <svg className="stars" viewBox="0 0 24 24" fill="#9290C3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                    <h6 className='rating-point p-0 m-0 fw-bold'>10.0</h6>
 
-                  <img className='opacity-75' src={item.img} alt="" />
+                  </div>
+
+                  {/* stars-end */}
+                  {/* bookmark */}
+                  <svg className="bookmarks position-absolute  p-1 rounded-3 fw-bold shadow " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                  </svg>
+                  {/* bookmark-end */}
+
+
+                  <img className='' src={item.img} alt="" />
                   {/* <h2>{item.title}</h2>
                     <p>{item.content}</p> */}
                 </div>
@@ -292,14 +307,29 @@ function Home() {
         <div className="slider-content-2-parent p-1">
           <Container fluid='md'>
             <h6 className='text-white fw-bold p-1 pb-0 mt-1 text-uppercase'>test</h6>
-            <div className="slider-content-2 d-flex overflow-x-auto gap-2">
+            <div className="slider-content-2 d-flex overflow-x-auto overflow-y-hidden gap-2">
 
 
               {sliderCards2.map((item) => (
 
-                <div key={item.id} className="slider-2-card d-flex justify-content-center align-items-center mb-3 position-relative">
+                <div key={item.id} className="slider-2-card d-flex mb-3 position-relative">
+                  {/* stars */}
+                  <div className="rating-div gap-2 position-absolute d-flex justify-content-center rounded-3 align-items-center p-1">
+                    <svg className="stars" viewBox="0 0 24 24" fill="#9290C3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                    <h6 className='rating-point p-0 m-0 fw-bold'>10.0</h6>
 
-                  <img className='opacity-75' src={item.img} alt="" />
+                  </div>
+
+                  {/* stars-end */}
+                  {/* bookmark */}
+                  <svg className="bookmarks position-absolute  p-1 rounded-3 fw-bold shadow " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                  </svg>
+                  {/* bookmark-end */}
+
+
+                  <img className='' src={item.img} alt="" />
                   {/* <h2>{item.title}</h2>
                     <p>{item.content}</p> */}
                 </div>
