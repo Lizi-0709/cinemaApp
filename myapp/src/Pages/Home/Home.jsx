@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import UserImg from '../../../public/img/man.png'
 import SliderCard from '../../assets/SliderCard/SliderCard';
+import CenterModeSlider from '../../assets/CenterModeSlider/CenterModeSlider';
 
 
 
@@ -113,102 +114,12 @@ function Home() {
       {/* slider */}
 
 
-      <div className="sliderBg p-3 shadow">
-        <Container fluid='md'>
-          <div className="slider-title-div d-flex justify-content-between">
-            <h4 className='text-center w-25 m-0 mt-5 fw-bold'>MOVIES</h4>
-            <h4 className='text-center w-25 m-0 mt-5 fw-bold'>SERIES</h4>
-            <h4 className='text-center w-25 m-0 mt-5 fw-bold'>LOREM</h4>
-            <h4 className='text-center w-25 m-0 mt-5 fw-bold'>LOREM</h4>
-          </div>
-          <div className="sliderContent mt-2 d-flex justify-content-between gap-4 p-2">
+      <Container fluid="md">
+        <div className="my-5">
 
-            <SliderCard
-
-              imageSrc1={'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg'}
-              imageSrc2={'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg'}
-              imageSrc3={'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg'}
-
-              title1={'LOREM'}
-              title2={'LOREM'}
-              title3={'LOREM'}
-
-              text1={'lorem ipsum dolor sit amedus'}
-              text2={'lorem ipsum dolor sit amedus'}
-              text3={'lorem ipsum dolor sit amedus'}
-
-              buttonText1={'Lorem'}
-              buttonText2={'Lorem'}
-              buttonText3={'Lorem'}
-
-            />
-
-            <SliderCard
-
-              imageSrc1={'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg'}
-              imageSrc2={'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg'}
-              imageSrc3={'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg'}
-
-              title1={'LOREM'}
-              title2={'LOREM'}
-              title3={'LOREM'}
-
-              text1={'lorem ipsum dolor sit amedus'}
-              text2={'lorem ipsum dolor sit amedus'}
-              text3={'lorem ipsum dolor sit amedus'}
-
-              buttonText1={'Lorem'}
-              buttonText2={'Lorem'}
-              buttonText3={'Lorem'}
-
-            />
-
-            <SliderCard
-
-              imageSrc1={'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg'}
-              imageSrc2={'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg'}
-              imageSrc3={'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg'}
-
-              title1={'LOREM'}
-              title2={'LOREM'}
-              title3={'LOREM'}
-
-              text1={'lorem ipsum dolor sit amedus'}
-              text2={'lorem ipsum dolor sit amedus'}
-              text3={'lorem ipsum dolor sit amedus'}
-
-              buttonText1={'Lorem'}
-              buttonText2={'Lorem'}
-              buttonText3={'Lorem'}
-
-            />
-
-            <SliderCard
-
-              imageSrc1={'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg'}
-              imageSrc2={'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg'}
-              imageSrc3={'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg'}
-
-              title1={'LOREM'}
-              title2={'LOREM'}
-              title3={'LOREM'}
-
-              text1={'lorem ipsum dolor sit amedus'}
-              text2={'lorem ipsum dolor sit amedus'}
-              text3={'lorem ipsum dolor sit amedus'}
-
-              buttonText1={'Lorem'}
-              buttonText2={'Lorem'}
-              buttonText3={'Lorem'}
-
-            />
-
-
-
-
-          </div>
-        </Container>
-      </div>
+          <CenterModeSlider ImgData={sliderCards2} />
+        </div>
+      </Container>
 
 
       {/* slider end */}
@@ -343,8 +254,7 @@ function Home() {
         </div>
       </div>
 
-
-
+     
 
 
     </div >
