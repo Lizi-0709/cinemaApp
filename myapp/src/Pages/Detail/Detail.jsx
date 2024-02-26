@@ -1,6 +1,9 @@
 import React from 'react';
 import '../Detail/detail.scss';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { FaRegBookmark } from "react-icons/fa6";
+import { IoTicketOutline } from "react-icons/io5";
+
 
 
 function Detail() {
@@ -22,15 +25,15 @@ function Detail() {
               <h4 className=''>2021 ‧ Gerilim/Gizem ‧ 1 saat 40 dakika</h4>
               <p className='mt-4'>Penceredeki Kadın, yazar AJ Finn'in 2018'de en çok satan aynı adlı romanından uyarlanan, senaryo'sunu Tracy Letts'in yazdığıJoe Wright tarafından yönetilen 2021 Amerikan psikolojik gerilim filmidir.</p>
               <div className="mb-2 mt-5">
-              <Button variant="primary" size="lg" onClick={embedYouTubeVideo}>
+                <Button variant="primary" size="lg" onClick={embedYouTubeVideo}>
                   Play icon<div id="videoContainer"></div>
                 </Button>
-                
+
                 <Button className='ms-4' variant="secondary" size="lg">
-                  bilet
+                  <IoTicketOutline />
                 </Button>
                 <Button className='ms-4' variant="secondary" size="lg">
-                  icon
+                  <FaRegBookmark />
                 </Button>
               </div>
 
