@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+
+.BtnOutline {
+    .MyBtn{
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        color: $title;
+        letter-spacing: 2px;
+        cursor: pointer !important;
+        background: none;
+        border: 1px solid $title;
+        outline: none;
+        text-shadow: -1px 1px 2px $title;
+        transition: all .5s;
+    
+        &:hover {
+            text-shadow: 0px 1px 0px $title;
+            color: $buttonBg;
+            border: 1px solid $dark-5;
+            background: $dark;
+        }
+    }
+}

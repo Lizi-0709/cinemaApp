@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.BtnNormal {
+    .MyBtn{
+        box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+        color: $buttonBg;
+        letter-spacing: 2px;
+        cursor: pointer !important;
+        background: $dark-5;
+        outline: none;
+        text-shadow: 0px 1px 0px $title;
+        transition: all .5s;
+        border: none;
+    
+        &:hover {
+            color: $title;        
+            background: $dark;
+        }
+    }
+}

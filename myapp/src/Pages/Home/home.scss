@@ -11,51 +11,8 @@
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
         .black-bg-theme {
-            background: rgba(0, 0, 0, 0.845);
+            background: rgba(0, 0, 0, 0.897);
             height: 100%;
-
-            nav {
-                height: 10%;
-                background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
-
-                .container-md {
-
-                    .Logo {}
-
-                    a {
-                        &:hover {
-                            opacity: .7;
-                            transition: all .5s;
-                        }
-                    }
-
-                    .active {
-                        border-bottom: 3px solid orange;
-                        transition: all .5s;
-
-                    }
-
-                    .account-div {
-                        width: 8%;
-
-
-
-                        a {
-                            img {
-
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 100%;
-                                border: 5px solid $dark-5 ;
-                                background-color: $dark-5;
-                                object-fit: cover;
-
-                            }
-                        }
-                    }
-
-                }
-            }
 
             .home-content {
                 height: 90%;
@@ -74,148 +31,50 @@
                                 .child-3 {
                                     h6 {
                                         letter-spacing: 6px;
-
                                     }
                                 }
 
-                                .child-4 {
-                                    // background: linear-gradient(to bottom, rgb(99, 99, 99), rgba(0, 0, 0, 0.504) 150%);
-                                }
+                                .child-4 {}
 
                                 .child-5 {
-                                    button {
-                                        border: none;
-                                        transition: all .5s;
-                                        background: $dark-5;
-                                        box-shadow: $dark 0px 2px;
+                                    // button {
+                                    //     border: none;
+                                    //     transition: all .5s;
+                                    //     background: $dark-5;
+                                    //     box-shadow: $dark 0px 2px;
 
-                                        &:hover {
-                                            background: $buttonBg;
-                                            box-shadow: $dark-5 0px 2px;
-                                            color: $dark !important;
-                                        }
-                                    }
+                                    //     &:hover {
+                                    //         background: $buttonBg;
+                                    //         box-shadow: $dark-5 0px 2px;
+                                    //         color: $dark !important;
+                                    //     }
+                                    // }
                                 }
                             }
                         }
                     }
-
-                    // .col-right {
-                    //     .content-right {
-                    //         button {
-                    //             border: none;
-                    //             transition: all .5s;
-                    //             background: $buttonBg;
-                    //             box-shadow: $dark 0px 2px;
-
-                    //             &:hover {
-                    //                 background: $dark-5;
-                    //                 box-shadow: $dark-5 0px 2px;
-                    //                 color: $title !important;
-                    //             }
-                    //         }
-                    //     }
-                    // }
                 }
             }
         }
     }
 
+    .filter-div-bg {
+        box-shadow: 0px -5px 5px rgba(1, 0, 21, 0.242);
 
-    .sliderBg {
+        .container-md {}
+    }
+
+    .first-slider-bg {
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.374);
+
         .container-md {
-            .slider-title-div {
+            .parent-first-slider {
                 h4 {
                     color: $title;
-                    letter-spacing: 2px;
                 }
-            }
 
-            .sliderContent {}
-        }
-
-    }
-
-
-    .slider-2-bg {
-        .slider-content-2-parent {
-            .container-md {
-
-                h6 {}
-
-                .slider-content-2 {
-
-
-                    .slider-2-card {
-                        position: relative;
-                        width: 12%;
-                        background: $dark-5 !important;
-                        flex: 0 0 auto;
-
-                        .rating-div {
-                            left: 10px;
-                            top: 10px;
-                            background: rgba(0, 0, 0, 0.808) !important;
-                            z-index: 99;
-                            width: 40%;
-
-                            svg {
-                                width: 25%;
-                            }
-
-                            .rating-point {
-
-                                color: $title !important;
-
-                            }
-
-                        }
-
-
-                        svg {
-                            color: $title !important;
-                            z-index: 99;
-                            transition: all .3s !important;
-
-                        }
-
-                        .bookmarks {
-                            background: rgba(0, 0, 0, 0.808) !important;
-                            position: absolute;
-                            top: 5px;
-                            right: 4px;
-                            width: 25% !important;
-
-                            &:hover {
-                                top: 8px;
-                                right: 8px;
-                                transform: scale(1.15);
-                            }
-
-                        }
-
-
-
-
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            border: 3px solid $title;
-                            object-fit: cover;
-                            transition: all .5s;
-
-                            &:hover {
-                                opacity: .75 !important;
-                                border: 3px solid $dark-5;
-                            }
-                        }
-
-                    }
-
-                }
+                .slick-dots {}
             }
         }
     }
 }
-
