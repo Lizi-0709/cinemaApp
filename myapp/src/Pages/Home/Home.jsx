@@ -1,59 +1,58 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom'
 import { Col, Container, Row } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-import UserImg from '../../../public/img/man.png'
-import SliderCard from '../../assets/SliderCard/SliderCard';
 import CenterModeSlider from '../../assets/CenterModeSlider/CenterModeSlider';
+import FilterSlider from '../../assets/FilterSlider/FilterSlider';
+import { FaFire, FaHeart } from "react-icons/fa";
+import { GiSpinningSword } from "react-icons/gi";
+import { TbHorseToy } from "react-icons/tb";
+import { GrTest } from "react-icons/gr";
+import MultiSlider from '../../assets/MultiSlider/MultiSlider';
+import BtnOutline from '../../assets/BtnOutline/BtnOutline';
+
 
 
 
 
 function Home() {
+  const Categories = [
+    { id: 1, title: 'Trending', icon: <FaFire /> },
+    { id: 3, title: 'Action', icon: <GiSpinningSword /> },
+    { id: 2, title: 'Romance', icon: <FaHeart /> },
+    { id: 4, title: 'Animation', icon: <TbHorseToy /> },
+    { id: 5, title: 'Test', icon: <GrTest /> },
+    { id: 6, title: 'Test', icon: <GrTest /> },
+    { id: 7, title: 'Test', icon: <GrTest /> },
+    { id: 9, title: 'Test', icon: <GrTest /> },
+    { id: 10, title: 'Test', icon: <GrTest /> },
+    { id: 12, title: 'Test', icon: <GrTest /> },
+    { id: 13, title: 'Test', icon: <GrTest /> },
+    { id: 14, title: 'Test', icon: <GrTest /> },
+    { id: 15, title: 'Test', icon: <GrTest /> },
+  ]
   const sliderCards2 = [
-    { id: 1, title: 'Card 1', content: 'Content 1', img: 'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg' },
-    { id: 2, title: 'Card 2', content: 'Content 2', img: 'https://tr.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/59/68/19816803.jpg' },
-    { id: 3, title: 'Card 3', content: 'Content 3', img: 'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg' },
-    { id: 4, title: 'Card 4', content: 'Content 4', img: 'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg' },
-    { id: 5, title: 'Card 5', content: 'Content 5', img: 'https://i.ebayimg.com/images/g/R-0AAOSw-jhUEyJ1/s-l400.jpg' },
-    { id: 6, title: 'Card 6', content: 'Content 6', img: 'https://i.ebayimg.com/images/g/onAAAOSw~W5ifP7J/s-l1200.jpg' },
-    { id: 7, title: 'Card 7', content: 'Content 7', img: 'https://i.pinimg.com/474x/38/b7/55/38b75579600e6d4c098ed2a0243aec52.jpg' },
-    { id: 8, title: 'Card 8', content: 'Content 8', img: 'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg' },
-    { id: 9, title: 'Card 9', content: 'Content 9', img: 'https://tr.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/59/68/19816803.jpg' },
-    { id: 10, title: 'Card 10', content: 'Content 10', img: 'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg' },
-    { id: 11, title: 'Card 11', content: 'Content 11', img: 'https://i.ebayimg.com/images/g/R-0AAOSw-jhUEyJ1/s-l400.jpg' },
-    { id: 12, title: 'Card 12', content: 'Content 12', img: 'https://i.ebayimg.com/images/g/onAAAOSw~W5ifP7J/s-l1200.jpg' },
-    { id: 13, title: 'Card 13', content: 'Content 13', img: 'https://i.pinimg.com/474x/38/b7/55/38b75579600e6d4c098ed2a0243aec52.jpg' },
-    { id: 14, title: 'Card 14', content: 'Content 14', img: 'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg' },
-    { id: 15, title: 'Card 15', content: 'Content 15', img: 'https://tr.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/59/68/19816803.jpg' },
-    { id: 16, title: 'Card 16', content: 'Content 16', img: 'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg' },
+    { years:'2012', rating: '8.2', id: 1, title: 'Card 1', content: 'Content 1', img: 'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg' },
+    { years:'2023', rating: '7.9', id: 2, title: 'Card 2', content: 'Content 2', img: 'https://tr.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/59/68/19816803.jpg' },
+    { years:'2013', rating: '8.9', id: 3, title: 'Card 3', content: 'Content 3', img: 'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg' },
+    { years:'2002', rating: '7.5', id: 4, title: 'Card 4', content: 'Content 4', img: 'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg' },
+    { years:'2008', rating: '6.9', id: 5, title: 'Card 5', content: 'Content 5', img: 'https://i.ebayimg.com/images/g/R-0AAOSw-jhUEyJ1/s-l400.jpg' },
+    { years:'2015', rating: '6.9', id: 6, title: 'Card 6', content: 'Content 6', img: 'https://i.ebayimg.com/images/g/onAAAOSw~W5ifP7J/s-l1200.jpg' },
+    { years:'2022', rating: '8.2', id: 7, title: 'Card 7', content: 'Content 7', img: 'https://i.pinimg.com/474x/38/b7/55/38b75579600e6d4c098ed2a0243aec52.jpg' },
+    { years:'2013', rating: '8.9', id: 8, title: 'Card 8', content: 'Content 8', img: 'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg' },
+    { years:'2009', rating: '9.9', id: 9, title: 'Card 9', content: 'Content 9', img: 'https://tr.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/59/68/19816803.jpg' },
+    { years:'2011', rating: '8.9', id: 10, title: 'Card 10', content: 'Content 10', img: 'https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg' },
+    { years:'2005', rating: '8.2', id: 11, title: 'Card 11', content: 'Content 11', img: 'https://i.ebayimg.com/images/g/R-0AAOSw-jhUEyJ1/s-l400.jpg' },
+    { years:'2019', rating: '8.9', id: 12, title: 'Card 12', content: 'Content 12', img: 'https://i.ebayimg.com/images/g/onAAAOSw~W5ifP7J/s-l1200.jpg' },
+    { years:'2020', rating: '7.9', id: 13, title: 'Card 13', content: 'Content 13', img: 'https://i.pinimg.com/474x/38/b7/55/38b75579600e6d4c098ed2a0243aec52.jpg' },
+    { years:'2021', rating: '8.9', id: 14, title: 'Card 14', content: 'Content 14', img: 'https://i.pinimg.com/474x/75/7f/26/757f26a9d80eae652757df2dacd6aef6.jpg' },
+    { years:'2022', rating: '8.2', id: 15, title: 'Card 15', content: 'Content 15', img: 'https://tr.web.img3.acsta.net/r_1280_720/medias/nmedia/18/85/59/68/19816803.jpg' },
+    { years:'2023', rating: '6.5', id: 16, title: 'Card 16', content: 'Content 16', img: 'https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@._V1_.jpg' },
   ];
 
 
   return (
     <div className='Home p-3'>
-      <div className="HomePageBgDiv position-relative rounded-5">
+      <div className="HomePageBgDiv position-relative rounded-5 mt-5">
         <div className="black-bg-theme rounded-5 ">
-          <Navbar expand="lg" className="text-light rounded-5">
-            <Container fluid="md">
-              <Navbar.Brand><h2 className='Logo fw-bold pt-3 text-white'>CineApp</h2></Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto mt-3">
-                  <NavLink to={"/"} exact activeClassName='active' className='text-light text-decoration-none mx-4 p-1'>HOME</NavLink>
-                  <NavLink to={"/detail"} exact activeClassName='active' className='text-light text-decoration-none mx-2 p-1'>DETAIL</NavLink>
-                  <NavLink to={"/lorem"} exact activeClassName='active' className='text-light text-decoration-none mx-2 p-1'>LOREM</NavLink>
-                  <NavLink to={"/lorem"} exact activeClassName='active' className='text-light text-decoration-none mx-2 p-1'>IPSUM</NavLink>
-                </Nav>
-                <Nav className='ms-auto account-div m-0 mt-5'>
-                  <NavLink to={"/profile"} exact activeClassName='active' className='text-light text-decoration-none mx-2 p-1 d-flex align-items-center'><img className='' src={UserImg} alt="" /></NavLink>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-
           <div className="home-content d-flex align-items-center">
             <Container fluid='md'>
               <Row>
@@ -73,8 +72,9 @@ function Home() {
                       <p className='text-white m-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nulla facere magni atque quibusdam magnam repudiandae dolorem maiores optio recusandae deleniti excepturi, non tempore minus ut, ab similique soluta rem?</p>
                     </div>
                     <div className="mt-4 child-5 d-flex gap-3">
-                      <button className='w-25 p-2 rounded-5 m-0 text-white fw-semibold'>More</button>
-                      <button className='w-25 p-2 rounded-5 m-0 text-white fw-semibold'>Lorem</button>
+                      {/* <button className='w-25 p-2 rounded-5 m-0 text-white fw-semibold'>More</button>
+                      <button className='w-25 p-2 rounded-5 m-0 text-white fw-semibold'>Lorem</button> */}
+                      <BtnOutline />
                     </div>
                   </div>
                 </Col>
@@ -86,87 +86,31 @@ function Home() {
       {/* Header-end */}
 
       {/* slider */}
-      <Container fluid="md">
-        <div className="my-5">
-          <CenterModeSlider ImgData={sliderCards2} />
-        </div>
-      </Container>
+      <div className="first-slider-bg p-1 rounded-5 mt-2">
+        <Container fluid="md">
+          <div className="my-5 parent-first-slider">
+            <h4 className='text-center fw-bold'>MOVIES</h4>
+            <CenterModeSlider ImgData={sliderCards2} />
+          </div>
+        </Container>
+      </div>
       {/* slider end */}
 
-      <div className="slider-2-bg ">
-        <div className="slider-content-2-parent p-1">
-          <Container fluid='md'>
-            <h6 className='text-white fw-bold p-1 pb-0 mt-1 text-uppercase'>test</h6>
-            <div className="slider-content-2 d-flex overflow-x-auto overflow-y-hidden gap-2">
-              {sliderCards2.map((item) => (
-                <div key={item.id} className="slider-2-card d-flex mb-3 position-relative">
-                  <div className="rating-div gap-2 position-absolute d-flex justify-content-center rounded-3 align-items-center p-1">
-                    <svg className="stars" viewBox="0 0 24 24" fill="#9290C3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-                    <h6 className='rating-point p-0 m-0 fw-bold'>10.0</h6>
-                  </div>
-                  <svg className="bookmarks position-absolute  p-1 rounded-3 fw-bold shadow " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                  </svg>
-                  <img className='' src={item.img} alt="" />
-                </div>
-              ))}
-            </div>
-          </Container>
-        </div>
+      {/* filter div */}
+      <div className="filter-div-bg shadow pt-2 pb-1 mt-3 rounded-5">
+        <Container fluid>
+          <FilterSlider Data={Categories} />
+        </Container>
       </div>
+      {/* filter div end */}
 
-
-      <div className="slider-2-bg ">
-        <div className="slider-content-2-parent p-1">
-          <Container fluid='md'>
-            <h6 className='text-white fw-bold p-1 pb-0 mt-1 text-uppercase'>test</h6>
-            <div className="slider-content-2 d-flex overflow-x-auto overflow-y-hidden gap-2">
-              {sliderCards2.map((item) => (
-                <div key={item.id} className="slider-2-card d-flex mb-3 position-relative">
-                  <div className="rating-div gap-2 position-absolute d-flex justify-content-center rounded-3 align-items-center p-1">
-                    <svg className="stars" viewBox="0 0 24 24" fill="#9290C3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-                    <h6 className='rating-point p-0 m-0 fw-bold'>10.0</h6>
-
-                  </div>
-
-                  <svg className="bookmarks position-absolute  p-1 rounded-3 fw-bold shadow " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                  </svg>
-                  <img className='' src={item.img} alt="" />
-                </div>
-              ))}
-            </div>
-          </Container>
-        </div>
-      </div>
-
-      <div className="slider-2-bg ">
-        <div className="slider-content-2-parent p-1">
-          <Container fluid='md'>
-            <h6 className='text-white fw-bold p-1 pb-0 mt-1 text-uppercase'>test</h6>
-            <div className="slider-content-2 d-flex overflow-x-auto overflow-y-hidden gap-2">
-
-
-              {sliderCards2.map((item) => (
-
-                <div key={item.id} className="slider-2-card d-flex mb-3 position-relative">
-                  <div className="rating-div gap-2 position-absolute d-flex justify-content-center rounded-3 align-items-center p-1">
-                    <svg className="stars" viewBox="0 0 24 24" fill="#9290C3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
-                    <h6 className='rating-point p-0 m-0 fw-bold'>10.0</h6>
-
-                  </div>
-                  <svg className="bookmarks position-absolute  p-1 rounded-3 fw-bold shadow " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                  </svg>
-                  <img className='' src={item.img} alt="" />
-                </div>
-              ))}
-            </div>
-          </Container>
-        </div>
+      
+      <div className="multi-slider-bg ">
+        <Container fluid='md'>
+          <MultiSlider Data={sliderCards2} />
+          <MultiSlider Data={sliderCards2} />
+          <MultiSlider Data={sliderCards2} />
+        </Container>
       </div>
     </div >
   )
