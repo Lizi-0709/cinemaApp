@@ -1,8 +1,6 @@
 @import "../../variables.scss";
 
 .Home {
-    height: 1000vh;
-
     .HomePageBgDiv {
         opacity: .7;
         width: 100%;
@@ -133,9 +131,7 @@
                 }
             }
 
-            .sliderContent {
-                
-            }
+            .sliderContent {}
         }
 
     }
@@ -222,3 +218,4 @@
         }
     }
 }
+

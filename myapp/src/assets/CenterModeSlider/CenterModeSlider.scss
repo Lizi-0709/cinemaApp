@@ -1,0 +1,70 @@
+@import "../../variables";
+
+
+.slider-container {
+    .parent-img-for-slider{
+        width: 100% !important;
+        height: 350px;
+        flex: 0 0 auto;
+        img {
+            
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .slick-slide {
+        padding: 1.2rem;
+        opacity: .6 !important;
+        transition: all 1s;
+    }
+
+    .slick-center {
+        opacity: 1 !important;
+        transform: scale(1.2);
+
+    }
+
+    .slick-prev,
+    .slick-next {
+        width: 25px;
+        height: 25px;
+        font-size: 0; // Buton içeriğini gizle
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-color: $dark-5; // Buton rengi
+        border: none; // Kenarlık kaldır
+        border-radius: 100%; // Yuvarlak buton
+        transition: all .5s;
+
+        &:hover {
+            background-color: $buttonBg; // Buton rengi
+
+        }
+    }
+
+    .slick-prev:before {
+        content: ''; // İçerik ekle
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: 4px solid white; // Beyaz ok üst kenar
+        border-right: 4px solid white; // Beyaz ok sağ kenar
+        transform: rotate(-135deg); // Oku 135 derece çevir (ters yönde)
+    }
+
+    .slick-next:before {
+        content: ''; // İçerik ekle
+
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-top: 4px solid white; // Beyaz ok üst kenar
+        border-right: 4px solid white; // Beyaz ok sağ kenar
+        transform: rotate(45deg); // Oku 45 derece çevir
+    }
+
+
+
+
+}
