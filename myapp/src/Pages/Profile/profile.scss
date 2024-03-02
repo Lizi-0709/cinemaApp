@@ -1,1 +1,84 @@
 @import "../../variables.scss";
+.container1 {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+    .parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+        .header {
+         color: white;
+        }
+}
+.Name1{
+    background-color: grey;
+    font-size: 15px;
+    width: 300px;
+    height: 30px;
+
+}
+.Name1::placeholder {
+    color: white;
+}
+.Name2{
+    background-color: grey;
+    font-size: 15px;
+    width: 300px;
+    height: 30px;
+}
+.Name2::placeholder {
+    color: white;
+}
+.text2 {
+    margin-top: 30px;
+    h4 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
+.text3 {
+    color: white;
+    margin-top: 30px;
+}
+#myCheckbox {
+    color: white;
+}
+.duzelyer {
+    color: white;
+    background-color: rgb(21,23,74);
+    
+}
+.button1 {
+    margin-top: 15px;
+    p{
+        color: white;
+        margin-top: 10px;
+    }
+}
+
+.button2 {
+    margin-top: 5px;
+}
+.iptal{
+    background-color: rgb(21,23,74);
+    color: white;
+    width: 70px;
+    border-radius: 2px solid grey;
+}
+
+.Checkbox {
+    .CheckBox {
+        color: white;
+    }
+}
+
+.checkbox1 {
+    .Checkbox1 {
+        color: white;
+    }
+}
